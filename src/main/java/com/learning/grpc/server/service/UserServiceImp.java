@@ -30,7 +30,28 @@ public class UserServiceImp extends UserServiceImplBase {
 
     Optional user = userDao.getUser(idToFind);
 
-    if(user.isPresent()) System.out.println("Got user " + idToFind + " in db " + user.toString());
+    UserObj userObj;
+
+    if(user.isPresent()) {
+      System.out.println("Got user " + idToFind + " in db " + user.toString());
+
+      User u = (User) user.get();
+
+      userObj = UserObj.newBuilder()
+          .setId(u.getId())
+          .setName(u.getName())
+          .setAge(u.getAge())
+          .build();
+    } else {
+      userObj = UserObj.newBuilder()
+          .setId(0)
+          .setName("")
+          .setAge(0)
+          .build();
+    }
+
+    responseObserver.onNext(userObj);
+    responseObserver.onCompleted();
   }
 
   @Override
