@@ -9,6 +9,7 @@ import com.learning.grpc.UsersResponse;
 import com.learning.grpc.server.entity.User;
 import com.learning.grpc.server.entity.UserDAO;
 import io.grpc.stub.StreamObserver;
+import java.util.Optional;
 
 public class UserServiceImp extends UserServiceImplBase {
 
@@ -25,7 +26,11 @@ public class UserServiceImp extends UserServiceImplBase {
 
   @Override
   public void getUser(UserRequest request, StreamObserver<UserObj> responseObserver) {
+    int idToFind = request.getId();
 
+    Optional user = userDao.getUser(idToFind);
+
+    if(user.isPresent()) System.out.println("Got user " + idToFind + " in db " + user.toString());
   }
 
   @Override

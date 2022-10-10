@@ -7,7 +7,7 @@ public interface DAO<T> {
 
   List<T> getAllUsers();
 
-  Optional<T> getUser(String id);
+  Optional<T> getUser(int id);
 
   void create(T t);
 

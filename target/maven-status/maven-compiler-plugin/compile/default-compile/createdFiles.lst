@@ -21,6 +21,7 @@ com/learning/grpc/UserObj.class
 com/learning/grpc/HelloRequest$1.class
 com/learning/grpc/UsersResponse$1.class
 com/learning/grpc/UserServiceGrpc$UserServiceBlockingStub.class
+com/learning/grpc/server/entity/UserDAO.class
 com/learning/grpc/GeneralResponseOrBuilder.class
 com/learning/grpc/GeneralResponse.class
 com/learning/grpc/client/GrpcClient.class
@@ -32,6 +33,7 @@ com/learning/grpc/HelloRequestOrBuilder.class
 com/learning/grpc/UserServiceOuterClass$1.class
 com/learning/grpc/UserObj$1.class
 com/learning/grpc/HelloServiceOuterClass$1.class
+com/learning/grpc/server/entity/DAO.class
 com/learning/grpc/HelloServiceGrpc$HelloServiceDescriptorSupplier.class
 com/learning/grpc/UsersResponse$Builder.class
 com/learning/grpc/UserServiceGrpc$UserServiceDescriptorSupplier.class

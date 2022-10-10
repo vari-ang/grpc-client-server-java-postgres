@@ -1,3 +1,4 @@
+/Users/varianto.prawira/Documents/java/grpc-learning/src/main/java/com/learning/grpc/server/entity/DAO.java
 /Users/varianto.prawira/Documents/java/grpc-learning/src/main/java/com/learning/grpc/server/service/UserServiceImp.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/java/com/learning/grpc/UserObj.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/grpc-java/com/learning/grpc/HelloServiceGrpc.java
@@ -10,6 +11,7 @@
 /Users/varianto.prawira/Documents/java/grpc-learning/src/main/java/com/learning/grpc/server/GrpcServer.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/java/com/learning/grpc/HelloResponse.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/java/com/learning/grpc/HelloServiceOuterClass.java
+/Users/varianto.prawira/Documents/java/grpc-learning/src/main/java/com/learning/grpc/server/entity/UserDAO.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/grpc-java/com/learning/grpc/UserServiceGrpc.java
 /Users/varianto.prawira/Documents/java/grpc-learning/src/main/java/com/learning/grpc/server/service/HelloServiceImp.java
 /Users/varianto.prawira/Documents/java/grpc-learning/target/generated-sources/protobuf/java/com/learning/grpc/UsersResponse.java

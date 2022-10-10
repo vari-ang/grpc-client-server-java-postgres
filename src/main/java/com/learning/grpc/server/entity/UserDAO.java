@@ -22,8 +22,12 @@ public class UserDAO implements DAO {
   }
 
   @Override
-  public Optional getUser(String id) {
-    return Optional.empty();
+  public Optional getUser(int id) {
+    System.out.println("Retrieving user from DB");
+
+    User user = entityManager.find(User.class, id);
+
+    return Optional.ofNullable(user);
   }
 
   @Override
@@ -37,10 +41,6 @@ public class UserDAO implements DAO {
 
     entityManager.persist(user);
     entityManager.getTransaction().commit();
-
-    // close the entity manager
-    entityManager.close();
-    entityManagerFactory.close();
   }
 
   @Override
