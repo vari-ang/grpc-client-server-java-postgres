@@ -1,5 +1,7 @@
-package com.learning.grpc;
+package com.learning.grpc.server;
 
+import com.learning.grpc.HelloRequest;
+import com.learning.grpc.HelloResponse;
 import com.learning.grpc.HelloServiceGrpc.HelloServiceImplBase;
 import io.grpc.stub.StreamObserver;
 
