@@ -2,6 +2,7 @@ package com.learning.grpc.server.entity;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 import org.junit.Test;
@@ -35,5 +36,14 @@ public class UserDAOTest {
     Optional userFound = u.getUser(randomId);
 
     assertTrue(userFound.isPresent());
+  }
+
+  @Test
+  public void getAllUsers() {
+    UserDAO u = new UserDAO();
+
+    List<User> users = u.getAllUsers();
+
+    assertFalse(users.isEmpty());
   }
 }

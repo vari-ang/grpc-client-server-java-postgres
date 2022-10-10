@@ -17,8 +17,13 @@ public class UserDAO implements DAO {
   }
 
   @Override
-  public List getAllUsers() {
-    return null;
+  public List<User> getAllUsers() {
+    System.out.println("Retrieving all users in DB");
+
+    @SuppressWarnings("unchecked")
+    List<User> users = entityManager.createQuery("SELECT u FROM User u").getResultList();
+
+    return users;
   }
 
   @Override
