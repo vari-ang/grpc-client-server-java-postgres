@@ -41,37 +41,37 @@ public final class UserServiceGrpc {
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.learning.grpc.UserRequest,
-      com.learning.grpc.User> METHOD_GET_USER =
-      io.grpc.MethodDescriptor.<com.learning.grpc.UserRequest, com.learning.grpc.User>newBuilder()
+      com.learning.grpc.UserObj> METHOD_GET_USER =
+      io.grpc.MethodDescriptor.<com.learning.grpc.UserRequest, com.learning.grpc.UserObj>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
               "com.learning.grpc.UserService", "getUser"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.learning.grpc.UserRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              com.learning.grpc.User.getDefaultInstance()))
+              com.learning.grpc.UserObj.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.learning.grpc.User,
+  public static final io.grpc.MethodDescriptor<com.learning.grpc.UserObj,
       com.learning.grpc.GeneralResponse> METHOD_CREATE =
-      io.grpc.MethodDescriptor.<com.learning.grpc.User, com.learning.grpc.GeneralResponse>newBuilder()
+      io.grpc.MethodDescriptor.<com.learning.grpc.UserObj, com.learning.grpc.GeneralResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
               "com.learning.grpc.UserService", "create"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              com.learning.grpc.User.getDefaultInstance()))
+              com.learning.grpc.UserObj.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.learning.grpc.GeneralResponse.getDefaultInstance()))
           .build();
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.learning.grpc.User,
+  public static final io.grpc.MethodDescriptor<com.learning.grpc.UserObj,
       com.learning.grpc.GeneralResponse> METHOD_UPDATE =
-      io.grpc.MethodDescriptor.<com.learning.grpc.User, com.learning.grpc.GeneralResponse>newBuilder()
+      io.grpc.MethodDescriptor.<com.learning.grpc.UserObj, com.learning.grpc.GeneralResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
               "com.learning.grpc.UserService", "update"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-              com.learning.grpc.User.getDefaultInstance()))
+              com.learning.grpc.UserObj.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.learning.grpc.GeneralResponse.getDefaultInstance()))
           .build();
@@ -125,20 +125,20 @@ public final class UserServiceGrpc {
     /**
      */
     public void getUser(com.learning.grpc.UserRequest request,
-        io.grpc.stub.StreamObserver<com.learning.grpc.User> responseObserver) {
+        io.grpc.stub.StreamObserver<com.learning.grpc.UserObj> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_USER, responseObserver);
     }
 
     /**
      */
-    public void create(com.learning.grpc.User request,
+    public void create(com.learning.grpc.UserObj request,
         io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_CREATE, responseObserver);
     }
 
     /**
      */
-    public void update(com.learning.grpc.User request,
+    public void update(com.learning.grpc.UserObj request,
         io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_UPDATE, responseObserver);
     }
@@ -164,20 +164,20 @@ public final class UserServiceGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 com.learning.grpc.UserRequest,
-                com.learning.grpc.User>(
+                com.learning.grpc.UserObj>(
                   this, METHODID_GET_USER)))
           .addMethod(
             METHOD_CREATE,
             asyncUnaryCall(
               new MethodHandlers<
-                com.learning.grpc.User,
+                com.learning.grpc.UserObj,
                 com.learning.grpc.GeneralResponse>(
                   this, METHODID_CREATE)))
           .addMethod(
             METHOD_UPDATE,
             asyncUnaryCall(
               new MethodHandlers<
-                com.learning.grpc.User,
+                com.learning.grpc.UserObj,
                 com.learning.grpc.GeneralResponse>(
                   this, METHODID_UPDATE)))
           .addMethod(
@@ -220,14 +220,14 @@ public final class UserServiceGrpc {
     /**
      */
     public void getUser(com.learning.grpc.UserRequest request,
-        io.grpc.stub.StreamObserver<com.learning.grpc.User> responseObserver) {
+        io.grpc.stub.StreamObserver<com.learning.grpc.UserObj> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_USER, getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void create(com.learning.grpc.User request,
+    public void create(com.learning.grpc.UserObj request,
         io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_CREATE, getCallOptions()), request, responseObserver);
@@ -235,7 +235,7 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public void update(com.learning.grpc.User request,
+    public void update(com.learning.grpc.UserObj request,
         io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_UPDATE, getCallOptions()), request, responseObserver);
@@ -277,21 +277,21 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public com.learning.grpc.User getUser(com.learning.grpc.UserRequest request) {
+    public com.learning.grpc.UserObj getUser(com.learning.grpc.UserRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_USER, getCallOptions(), request);
     }
 
     /**
      */
-    public com.learning.grpc.GeneralResponse create(com.learning.grpc.User request) {
+    public com.learning.grpc.GeneralResponse create(com.learning.grpc.UserObj request) {
       return blockingUnaryCall(
           getChannel(), METHOD_CREATE, getCallOptions(), request);
     }
 
     /**
      */
-    public com.learning.grpc.GeneralResponse update(com.learning.grpc.User request) {
+    public com.learning.grpc.GeneralResponse update(com.learning.grpc.UserObj request) {
       return blockingUnaryCall(
           getChannel(), METHOD_UPDATE, getCallOptions(), request);
     }
@@ -332,7 +332,7 @@ public final class UserServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.learning.grpc.User> getUser(
+    public com.google.common.util.concurrent.ListenableFuture<com.learning.grpc.UserObj> getUser(
         com.learning.grpc.UserRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_USER, getCallOptions()), request);
@@ -341,7 +341,7 @@ public final class UserServiceGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.learning.grpc.GeneralResponse> create(
-        com.learning.grpc.User request) {
+        com.learning.grpc.UserObj request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_CREATE, getCallOptions()), request);
     }
@@ -349,7 +349,7 @@ public final class UserServiceGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.learning.grpc.GeneralResponse> update(
-        com.learning.grpc.User request) {
+        com.learning.grpc.UserObj request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_UPDATE, getCallOptions()), request);
     }
@@ -392,14 +392,14 @@ public final class UserServiceGrpc {
           break;
         case METHODID_GET_USER:
           serviceImpl.getUser((com.learning.grpc.UserRequest) request,
-              (io.grpc.stub.StreamObserver<com.learning.grpc.User>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.learning.grpc.UserObj>) responseObserver);
           break;
         case METHODID_CREATE:
-          serviceImpl.create((com.learning.grpc.User) request,
+          serviceImpl.create((com.learning.grpc.UserObj) request,
               (io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse>) responseObserver);
           break;
         case METHODID_UPDATE:
-          serviceImpl.update((com.learning.grpc.User) request,
+          serviceImpl.update((com.learning.grpc.UserObj) request,
               (io.grpc.stub.StreamObserver<com.learning.grpc.GeneralResponse>) responseObserver);
           break;
         case METHODID_DELETE:

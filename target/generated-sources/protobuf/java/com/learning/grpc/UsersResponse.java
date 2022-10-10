@@ -45,11 +45,11 @@ public  final class UsersResponse extends
           }
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-              users_ = new java.util.ArrayList<com.learning.grpc.User>();
+              users_ = new java.util.ArrayList<com.learning.grpc.UserObj>();
               mutable_bitField0_ |= 0x00000001;
             }
             users_.add(
-                input.readMessage(com.learning.grpc.User.parser(), extensionRegistry));
+                input.readMessage(com.learning.grpc.UserObj.parser(), extensionRegistry));
             break;
           }
         }
@@ -79,36 +79,36 @@ public  final class UsersResponse extends
   }
 
   public static final int USERS_FIELD_NUMBER = 1;
-  private java.util.List<com.learning.grpc.User> users_;
+  private java.util.List<com.learning.grpc.UserObj> users_;
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  public java.util.List<com.learning.grpc.User> getUsersList() {
+  public java.util.List<com.learning.grpc.UserObj> getUsersList() {
     return users_;
   }
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  public java.util.List<? extends com.learning.grpc.UserOrBuilder> 
+  public java.util.List<? extends com.learning.grpc.UserObjOrBuilder> 
       getUsersOrBuilderList() {
     return users_;
   }
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
   public int getUsersCount() {
     return users_.size();
   }
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  public com.learning.grpc.User getUsers(int index) {
+  public com.learning.grpc.UserObj getUsers(int index) {
     return users_.get(index);
   }
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  public com.learning.grpc.UserOrBuilder getUsersOrBuilder(
+  public com.learning.grpc.UserObjOrBuilder getUsersOrBuilder(
       int index) {
     return users_.get(index);
   }
@@ -433,22 +433,22 @@ public  final class UsersResponse extends
     }
     private int bitField0_;
 
-    private java.util.List<com.learning.grpc.User> users_ =
+    private java.util.List<com.learning.grpc.UserObj> users_ =
       java.util.Collections.emptyList();
     private void ensureUsersIsMutable() {
       if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-        users_ = new java.util.ArrayList<com.learning.grpc.User>(users_);
+        users_ = new java.util.ArrayList<com.learning.grpc.UserObj>(users_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.learning.grpc.User, com.learning.grpc.User.Builder, com.learning.grpc.UserOrBuilder> usersBuilder_;
+        com.learning.grpc.UserObj, com.learning.grpc.UserObj.Builder, com.learning.grpc.UserObjOrBuilder> usersBuilder_;
 
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public java.util.List<com.learning.grpc.User> getUsersList() {
+    public java.util.List<com.learning.grpc.UserObj> getUsersList() {
       if (usersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(users_);
       } else {
@@ -456,7 +456,7 @@ public  final class UsersResponse extends
       }
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public int getUsersCount() {
       if (usersBuilder_ == null) {
@@ -466,9 +466,9 @@ public  final class UsersResponse extends
       }
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public com.learning.grpc.User getUsers(int index) {
+    public com.learning.grpc.UserObj getUsers(int index) {
       if (usersBuilder_ == null) {
         return users_.get(index);
       } else {
@@ -476,10 +476,10 @@ public  final class UsersResponse extends
       }
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder setUsers(
-        int index, com.learning.grpc.User value) {
+        int index, com.learning.grpc.UserObj value) {
       if (usersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -493,10 +493,10 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder setUsers(
-        int index, com.learning.grpc.User.Builder builderForValue) {
+        int index, com.learning.grpc.UserObj.Builder builderForValue) {
       if (usersBuilder_ == null) {
         ensureUsersIsMutable();
         users_.set(index, builderForValue.build());
@@ -507,9 +507,9 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public Builder addUsers(com.learning.grpc.User value) {
+    public Builder addUsers(com.learning.grpc.UserObj value) {
       if (usersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,10 +523,10 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder addUsers(
-        int index, com.learning.grpc.User value) {
+        int index, com.learning.grpc.UserObj value) {
       if (usersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -540,10 +540,10 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder addUsers(
-        com.learning.grpc.User.Builder builderForValue) {
+        com.learning.grpc.UserObj.Builder builderForValue) {
       if (usersBuilder_ == null) {
         ensureUsersIsMutable();
         users_.add(builderForValue.build());
@@ -554,10 +554,10 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder addUsers(
-        int index, com.learning.grpc.User.Builder builderForValue) {
+        int index, com.learning.grpc.UserObj.Builder builderForValue) {
       if (usersBuilder_ == null) {
         ensureUsersIsMutable();
         users_.add(index, builderForValue.build());
@@ -568,10 +568,10 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder addAllUsers(
-        java.lang.Iterable<? extends com.learning.grpc.User> values) {
+        java.lang.Iterable<? extends com.learning.grpc.UserObj> values) {
       if (usersBuilder_ == null) {
         ensureUsersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -583,7 +583,7 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder clearUsers() {
       if (usersBuilder_ == null) {
@@ -596,7 +596,7 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
     public Builder removeUsers(int index) {
       if (usersBuilder_ == null) {
@@ -609,16 +609,16 @@ public  final class UsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public com.learning.grpc.User.Builder getUsersBuilder(
+    public com.learning.grpc.UserObj.Builder getUsersBuilder(
         int index) {
       return getUsersFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public com.learning.grpc.UserOrBuilder getUsersOrBuilder(
+    public com.learning.grpc.UserObjOrBuilder getUsersOrBuilder(
         int index) {
       if (usersBuilder_ == null) {
         return users_.get(index);  } else {
@@ -626,9 +626,9 @@ public  final class UsersResponse extends
       }
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public java.util.List<? extends com.learning.grpc.UserOrBuilder> 
+    public java.util.List<? extends com.learning.grpc.UserObjOrBuilder> 
          getUsersOrBuilderList() {
       if (usersBuilder_ != null) {
         return usersBuilder_.getMessageOrBuilderList();
@@ -637,33 +637,33 @@ public  final class UsersResponse extends
       }
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public com.learning.grpc.User.Builder addUsersBuilder() {
+    public com.learning.grpc.UserObj.Builder addUsersBuilder() {
       return getUsersFieldBuilder().addBuilder(
-          com.learning.grpc.User.getDefaultInstance());
+          com.learning.grpc.UserObj.getDefaultInstance());
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public com.learning.grpc.User.Builder addUsersBuilder(
+    public com.learning.grpc.UserObj.Builder addUsersBuilder(
         int index) {
       return getUsersFieldBuilder().addBuilder(
-          index, com.learning.grpc.User.getDefaultInstance());
+          index, com.learning.grpc.UserObj.getDefaultInstance());
     }
     /**
-     * <code>repeated .com.learning.grpc.User users = 1;</code>
+     * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
      */
-    public java.util.List<com.learning.grpc.User.Builder> 
+    public java.util.List<com.learning.grpc.UserObj.Builder> 
          getUsersBuilderList() {
       return getUsersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.learning.grpc.User, com.learning.grpc.User.Builder, com.learning.grpc.UserOrBuilder> 
+        com.learning.grpc.UserObj, com.learning.grpc.UserObj.Builder, com.learning.grpc.UserObjOrBuilder> 
         getUsersFieldBuilder() {
       if (usersBuilder_ == null) {
         usersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.learning.grpc.User, com.learning.grpc.User.Builder, com.learning.grpc.UserOrBuilder>(
+            com.learning.grpc.UserObj, com.learning.grpc.UserObj.Builder, com.learning.grpc.UserObjOrBuilder>(
                 users_,
                 ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),

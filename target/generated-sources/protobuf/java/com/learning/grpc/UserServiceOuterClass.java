@@ -20,10 +20,10 @@ public final class UserServiceOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_learning_grpc_UserRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_com_learning_grpc_User_descriptor;
+    internal_static_com_learning_grpc_UserObj_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_com_learning_grpc_User_fieldAccessorTable;
+      internal_static_com_learning_grpc_UserObj_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_learning_grpc_UsersResponse_descriptor;
   static final 
@@ -45,20 +45,20 @@ public final class UserServiceOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021UserService.proto\022\021com.learning.grpc\032\033" +
       "google/protobuf/empty.proto\"\031\n\013UserReque" +
-      "st\022\n\n\002id\030\001 \001(\t\"-\n\004User\022\n\n\002id\030\001 \001(\t\022\014\n\004na" +
-      "me\030\002 \001(\t\022\013\n\003age\030\003 \001(\005\"7\n\rUsersResponse\022&" +
-      "\n\005users\030\001 \003(\0132\027.com.learning.grpc.User\"#" +
-      "\n\017GeneralResponse\022\020\n\010response\030\001 \001(\t2\366\002\n\013" +
-      "UserService\022G\n\013getAllUsers\022\026.google.prot" +
-      "obuf.Empty\032 .com.learning.grpc.UsersResp" +
-      "onse\022B\n\007getUser\022\036.com.learning.grpc.User" +
-      "Request\032\027.com.learning.grpc.User\022E\n\006crea",
-      "te\022\027.com.learning.grpc.User\032\".com.learni" +
-      "ng.grpc.GeneralResponse\022E\n\006update\022\027.com." +
-      "learning.grpc.User\032\".com.learning.grpc.G" +
-      "eneralResponse\022L\n\006delete\022\036.com.learning." +
-      "grpc.UserRequest\032\".com.learning.grpc.Gen" +
-      "eralResponseB\002P\001b\006proto3"
+      "st\022\n\n\002id\030\001 \001(\t\"0\n\007UserObj\022\n\n\002id\030\001 \001(\t\022\014\n" +
+      "\004name\030\002 \001(\t\022\013\n\003age\030\003 \001(\005\":\n\rUsersRespons" +
+      "e\022)\n\005users\030\001 \003(\0132\032.com.learning.grpc.Use" +
+      "rObj\"#\n\017GeneralResponse\022\020\n\010response\030\001 \001(" +
+      "\t2\377\002\n\013UserService\022G\n\013getAllUsers\022\026.googl" +
+      "e.protobuf.Empty\032 .com.learning.grpc.Use" +
+      "rsResponse\022E\n\007getUser\022\036.com.learning.grp" +
+      "c.UserRequest\032\032.com.learning.grpc.UserOb",
+      "j\022H\n\006create\022\032.com.learning.grpc.UserObj\032" +
+      "\".com.learning.grpc.GeneralResponse\022H\n\006u" +
+      "pdate\022\032.com.learning.grpc.UserObj\032\".com." +
+      "learning.grpc.GeneralResponse\022L\n\006delete\022" +
+      "\036.com.learning.grpc.UserRequest\032\".com.le" +
+      "arning.grpc.GeneralResponseB\002P\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -79,11 +79,11 @@ public final class UserServiceOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_learning_grpc_UserRequest_descriptor,
         new java.lang.String[] { "Id", });
-    internal_static_com_learning_grpc_User_descriptor =
+    internal_static_com_learning_grpc_UserObj_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_com_learning_grpc_User_fieldAccessorTable = new
+    internal_static_com_learning_grpc_UserObj_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_com_learning_grpc_User_descriptor,
+        internal_static_com_learning_grpc_UserObj_descriptor,
         new java.lang.String[] { "Id", "Name", "Age", });
     internal_static_com_learning_grpc_UsersResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);

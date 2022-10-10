@@ -1,4 +1,4 @@
-package com.learning.grpc.server;
+package com.learning.grpc.server.service;
 
 import com.learning.grpc.HelloRequest;
 import com.learning.grpc.HelloResponse;

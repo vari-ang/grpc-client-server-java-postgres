@@ -8,26 +8,26 @@ public interface UsersResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  java.util.List<com.learning.grpc.User> 
+  java.util.List<com.learning.grpc.UserObj> 
       getUsersList();
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  com.learning.grpc.User getUsers(int index);
+  com.learning.grpc.UserObj getUsers(int index);
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
   int getUsersCount();
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  java.util.List<? extends com.learning.grpc.UserOrBuilder> 
+  java.util.List<? extends com.learning.grpc.UserObjOrBuilder> 
       getUsersOrBuilderList();
   /**
-   * <code>repeated .com.learning.grpc.User users = 1;</code>
+   * <code>repeated .com.learning.grpc.UserObj users = 1;</code>
    */
-  com.learning.grpc.UserOrBuilder getUsersOrBuilder(
+  com.learning.grpc.UserObjOrBuilder getUsersOrBuilder(
       int index);
 }

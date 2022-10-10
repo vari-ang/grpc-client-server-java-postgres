@@ -4,17 +4,17 @@
 package com.learning.grpc;
 
 /**
- * Protobuf type {@code com.learning.grpc.User}
+ * Protobuf type {@code com.learning.grpc.UserObj}
  */
-public  final class User extends
+public  final class UserObj extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:com.learning.grpc.User)
-    UserOrBuilder {
-  // Use User.newBuilder() to construct.
-  private User(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:com.learning.grpc.UserObj)
+    UserObjOrBuilder {
+  // Use UserObj.newBuilder() to construct.
+  private UserObj(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private User() {
+  private UserObj() {
     id_ = "";
     name_ = "";
     age_ = 0;
@@ -25,7 +25,7 @@ public  final class User extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private User(
+  private UserObj(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -75,14 +75,14 @@ public  final class User extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_User_descriptor;
+    return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_UserObj_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_User_fieldAccessorTable
+    return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_UserObj_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.learning.grpc.User.class, com.learning.grpc.User.Builder.class);
+            com.learning.grpc.UserObj.class, com.learning.grpc.UserObj.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
@@ -210,10 +210,10 @@ public  final class User extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.learning.grpc.User)) {
+    if (!(obj instanceof com.learning.grpc.UserObj)) {
       return super.equals(obj);
     }
-    com.learning.grpc.User other = (com.learning.grpc.User) obj;
+    com.learning.grpc.UserObj other = (com.learning.grpc.UserObj) obj;
 
     boolean result = true;
     result = result && getId()
@@ -243,69 +243,69 @@ public  final class User extends
     return hash;
   }
 
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.learning.grpc.User parseFrom(byte[] data)
+  public static com.learning.grpc.UserObj parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.learning.grpc.User parseFrom(java.io.InputStream input)
+  public static com.learning.grpc.UserObj parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.learning.grpc.User parseDelimitedFrom(java.io.InputStream input)
+  public static com.learning.grpc.UserObj parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.learning.grpc.User parseDelimitedFrom(
+  public static com.learning.grpc.UserObj parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.learning.grpc.User parseFrom(
+  public static com.learning.grpc.UserObj parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -317,7 +317,7 @@ public  final class User extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.learning.grpc.User prototype) {
+  public static Builder newBuilder(com.learning.grpc.UserObj prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -332,25 +332,25 @@ public  final class User extends
     return builder;
   }
   /**
-   * Protobuf type {@code com.learning.grpc.User}
+   * Protobuf type {@code com.learning.grpc.UserObj}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:com.learning.grpc.User)
-      com.learning.grpc.UserOrBuilder {
+      // @@protoc_insertion_point(builder_implements:com.learning.grpc.UserObj)
+      com.learning.grpc.UserObjOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_User_descriptor;
+      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_UserObj_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_User_fieldAccessorTable
+      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_UserObj_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.learning.grpc.User.class, com.learning.grpc.User.Builder.class);
+              com.learning.grpc.UserObj.class, com.learning.grpc.UserObj.Builder.class);
     }
 
-    // Construct using com.learning.grpc.User.newBuilder()
+    // Construct using com.learning.grpc.UserObj.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -378,23 +378,23 @@ public  final class User extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_User_descriptor;
+      return com.learning.grpc.UserServiceOuterClass.internal_static_com_learning_grpc_UserObj_descriptor;
     }
 
-    public com.learning.grpc.User getDefaultInstanceForType() {
-      return com.learning.grpc.User.getDefaultInstance();
+    public com.learning.grpc.UserObj getDefaultInstanceForType() {
+      return com.learning.grpc.UserObj.getDefaultInstance();
     }
 
-    public com.learning.grpc.User build() {
-      com.learning.grpc.User result = buildPartial();
+    public com.learning.grpc.UserObj build() {
+      com.learning.grpc.UserObj result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.learning.grpc.User buildPartial() {
-      com.learning.grpc.User result = new com.learning.grpc.User(this);
+    public com.learning.grpc.UserObj buildPartial() {
+      com.learning.grpc.UserObj result = new com.learning.grpc.UserObj(this);
       result.id_ = id_;
       result.name_ = name_;
       result.age_ = age_;
@@ -429,16 +429,16 @@ public  final class User extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.learning.grpc.User) {
-        return mergeFrom((com.learning.grpc.User)other);
+      if (other instanceof com.learning.grpc.UserObj) {
+        return mergeFrom((com.learning.grpc.UserObj)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.learning.grpc.User other) {
-      if (other == com.learning.grpc.User.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.learning.grpc.UserObj other) {
+      if (other == com.learning.grpc.UserObj.getDefaultInstance()) return this;
       if (!other.getId().isEmpty()) {
         id_ = other.id_;
         onChanged();
@@ -462,11 +462,11 @@ public  final class User extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.learning.grpc.User parsedMessage = null;
+      com.learning.grpc.UserObj parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.learning.grpc.User) e.getUnfinishedMessage();
+        parsedMessage = (com.learning.grpc.UserObj) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -650,39 +650,39 @@ public  final class User extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:com.learning.grpc.User)
+    // @@protoc_insertion_point(builder_scope:com.learning.grpc.UserObj)
   }
 
-  // @@protoc_insertion_point(class_scope:com.learning.grpc.User)
-  private static final com.learning.grpc.User DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:com.learning.grpc.UserObj)
+  private static final com.learning.grpc.UserObj DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.learning.grpc.User();
+    DEFAULT_INSTANCE = new com.learning.grpc.UserObj();
   }
 
-  public static com.learning.grpc.User getDefaultInstance() {
+  public static com.learning.grpc.UserObj getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<User>
-      PARSER = new com.google.protobuf.AbstractParser<User>() {
-    public User parsePartialFrom(
+  private static final com.google.protobuf.Parser<UserObj>
+      PARSER = new com.google.protobuf.AbstractParser<UserObj>() {
+    public UserObj parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new User(input, extensionRegistry);
+        return new UserObj(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<User> parser() {
+  public static com.google.protobuf.Parser<UserObj> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<User> getParserForType() {
+  public com.google.protobuf.Parser<UserObj> getParserForType() {
     return PARSER;
   }
 
-  public com.learning.grpc.User getDefaultInstanceForType() {
+  public com.learning.grpc.UserObj getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -3,8 +3,8 @@
 
 package com.learning.grpc;
 
-public interface UserOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:com.learning.grpc.User)
+public interface UserObjOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:com.learning.grpc.UserObj)
     com.google.protobuf.MessageOrBuilder {
 
   /**
