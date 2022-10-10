@@ -25,7 +25,4 @@ public class HelloServiceImp extends HelloServiceImplBase {
     responseObserver.onNext(response);
     responseObserver.onCompleted();
   }
-
-  @Override
-  public void hello() {}
 }

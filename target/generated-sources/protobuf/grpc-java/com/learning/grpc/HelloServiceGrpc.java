@@ -85,8 +85,6 @@ public final class HelloServiceGrpc {
                   this, METHODID_HELLO)))
           .build();
     }
-
-    public abstract void hello();
   }
 
   /**
