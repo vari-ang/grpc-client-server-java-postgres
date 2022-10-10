@@ -18,7 +18,7 @@ public class User {
   @Column(name = "id", nullable = false)
   @Getter
   @Setter
-  private int id;
+  private String id;
 
   @Column(name = "name")
   @Getter
