@@ -5,6 +5,8 @@ import io.grpc.stub.StreamObserver;
 
 public class HelloServiceImp extends HelloServiceImplBase {
 
+  public HelloServiceImp() {}
+
   @Override
   public void hello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
     String greeting = new StringBuilder()
