@@ -45,7 +45,7 @@ public final class UserServiceOuterClass {
     java.lang.String[] descriptorData = {
       "\n\021UserService.proto\022\021com.learning.grpc\032\033" +
       "google/protobuf/empty.proto\"\031\n\013UserReque" +
-      "st\022\n\n\002id\030\001 \001(\t\"0\n\007UserObj\022\n\n\002id\030\001 \001(\t\022\014\n" +
+      "st\022\n\n\002id\030\001 \001(\t\"0\n\007UserObj\022\n\n\002id\030\001 \001(\005\022\014\n" +
       "\004name\030\002 \001(\t\022\013\n\003age\030\003 \001(\005\":\n\rUsersRespons" +
       "e\022)\n\005users\030\001 \003(\0132\032.com.learning.grpc.Use" +
       "rObj\"#\n\017GeneralResponse\022\020\n\010response\030\001 \001(" +

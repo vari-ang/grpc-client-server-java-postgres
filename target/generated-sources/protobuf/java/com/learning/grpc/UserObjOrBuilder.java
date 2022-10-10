@@ -8,14 +8,9 @@ public interface UserObjOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string id = 1;</code>
+   * <code>int32 id = 1;</code>
    */
-  java.lang.String getId();
-  /**
-   * <code>string id = 1;</code>
-   */
-  com.google.protobuf.ByteString
-      getIdBytes();
+  int getId();
 
   /**
    * <code>string name = 2;</code>
