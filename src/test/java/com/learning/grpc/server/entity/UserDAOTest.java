@@ -15,8 +15,8 @@ public class UserDAOTest {
 
     User user = new User();
     user.setId(new Random().nextInt(1000000));
-    user.setName("Joni");
-    user.setAge(15);
+    user.setName("Bambang");
+    user.setAge(new Random().nextInt(50));
 
     u.create(user);
   }
@@ -29,8 +29,8 @@ public class UserDAOTest {
 
     User user = new User();
     user.setId(randomId);
-    user.setName("Joni");
-    user.setAge(15);
+    user.setName("Bejo");
+    user.setAge(new Random().nextInt(50));
     u.create(user);
 
     Optional userFound = u.getUser(randomId);
