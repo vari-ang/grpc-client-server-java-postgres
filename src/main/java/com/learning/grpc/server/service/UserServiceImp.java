@@ -9,6 +9,7 @@ import com.learning.grpc.UsersResponse;
 import com.learning.grpc.server.entity.User;
 import com.learning.grpc.server.entity.UserDAO;
 import io.grpc.stub.StreamObserver;
+import java.util.List;
 import java.util.Optional;
 
 public class UserServiceImp extends UserServiceImplBase {
@@ -20,8 +21,23 @@ public class UserServiceImp extends UserServiceImplBase {
   }
 
   @Override
-  public void getAllUsers(Empty emptyReq, StreamObserver<UsersResponse> UsersResponse) {
+  public void getAllUsers(Empty emptyReq, StreamObserver<UsersResponse> responseObserver) {
+    List<User> users = userDao.getAllUsers();
 
+    UsersResponse usersObj = UsersResponse.newBuilder()
+        .addAllUsers(
+            users.stream().map(
+              u -> UserObj.newBuilder()
+                  .setId(u.getId())
+                  .setName(u.getName())
+                  .setAge(u.getAge())
+                  .build()
+            ).toList()
+        )
+        .build();
+
+    responseObserver.onNext(usersObj);
+    responseObserver.onCompleted();
   }
 
   @Override

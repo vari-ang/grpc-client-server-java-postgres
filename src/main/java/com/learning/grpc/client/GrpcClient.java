@@ -1,15 +1,13 @@
 package com.learning.grpc.client;
 
-import com.learning.grpc.GeneralResponse;
-import com.learning.grpc.HelloRequest;
-import com.learning.grpc.HelloResponse;
-import com.learning.grpc.HelloServiceGrpc;
-import com.learning.grpc.HelloServiceGrpc.HelloServiceBlockingStub;
+import com.google.protobuf.Empty;
 import com.learning.grpc.UserObj;
 import com.learning.grpc.UserServiceGrpc;
 import com.learning.grpc.UserServiceGrpc.UserServiceBlockingStub;
+import com.learning.grpc.UsersResponse;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import java.util.List;
 
 public class GrpcClient {
   public static void main(String[] args) {
@@ -17,25 +15,23 @@ public class GrpcClient {
         .usePlaintext()
         .build();
 
-//    HelloServiceBlockingStub stub
-//        = HelloServiceGrpc.newBlockingStub(channel);
-
-//    HelloResponse helloResponse = stub.hello(HelloRequest.newBuilder()
-//        .setFirstName("Vari")
-//        .setLastName("Ang")
-//        .build());
-//
-//    System.out.println(helloResponse.getGreeting());
-
     UserServiceBlockingStub stub = UserServiceGrpc.newBlockingStub(channel);
 
-    GeneralResponse resp = stub.create(UserObj.newBuilder()
-        .setId(2)
-        .setName("Joni")
-        .setAge(19)
-        .build());
+    UsersResponse resp = stub.getAllUsers(Empty.getDefaultInstance());
+    List<UserObj> users = resp.getUsersList();
 
-    System.out.println(resp.getResponse());
+    for(UserObj userObj : users) {
+      String userInfo = new StringBuilder()
+          .append("User: \n")
+          .append("ID = " + userObj.getId() + "\n")
+          .append("Name = " + userObj.getName() + "\n")
+          .append("Age = " + userObj.getAge() + "\n")
+          .toString();
+
+      System.out.println(userInfo);
+    }
+
+    System.out.println("Total: " + users.size() + " users");
 
     channel.shutdown();
   }
