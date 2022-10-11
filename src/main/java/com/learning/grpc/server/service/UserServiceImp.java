@@ -78,6 +78,13 @@ public class UserServiceImp extends UserServiceImplBase {
     user.setAge(request.getAge());
 
     userDao.create(user);
+
+    GeneralResponse resp = GeneralResponse.newBuilder()
+        .setResponse("OK")
+        .build();
+
+    responseObserver.onNext(resp);
+    responseObserver.onCompleted();
   }
 
   @Override
