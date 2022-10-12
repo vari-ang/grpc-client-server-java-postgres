@@ -2,7 +2,7 @@
 
 gRPC CRUD Operation Service using Java and Postgres
 
-## Tech Stacks
+## Tech Stack
 1. Java (plain)
 2. Hibernate
 3. gRPC
@@ -31,4 +31,19 @@ In your Intellij code editor go to `src/main/java/com.learning.grpc/GrpcClient` 
 By default, the client will retrieve all users stored in database by calling `getAllUsers` RPC method defined in the server side. The result is outputted to the terminal and the process finished.
 
 ## How to Test
-`mvn test`
+The tests are all about CRUD operation in database
+
+Run all the tests: `mvn test`
+
+To run a specific CRUD operation test:  
+Go to `src/test/com.learning.grpc.server.entity/UserDAOTest`  
+Select a test then click the button besides the test name or press `Ctrl + Shift + R`  
+You can run `create` test to add your own user data to the database
+
+## Features
+[V] Create user  
+[V] Get all users   
+[V] Get a user  
+[ ] Update  
+[ ] Delete  
+[ ] Client can choose a particular operation from terminal
