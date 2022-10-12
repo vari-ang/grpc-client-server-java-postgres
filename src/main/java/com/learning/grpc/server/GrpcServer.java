@@ -7,7 +7,7 @@ import io.grpc.ServerBuilder;
 public class GrpcServer {
   public static void main(String[] args) {
     Server server = ServerBuilder
-        .forPort(8080)
+        .forPort(8798)
         .addService(new UserServiceImp()).build();
 
     try {
